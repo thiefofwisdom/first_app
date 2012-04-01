@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Login:</b>
+  <%= @task.login %>
+</p>
+
+<p>
+  <b>Pwd:</b>
+  <%= @task.pwd %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @task.name %>
+</p>
+
+<p>
+  <b>Surname:</b>
+  <%= @task.surname %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @task.email %>
+</p>
+
+<p>
+  <b>Birthdate:</b>
+  <%= @task.birthdate %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

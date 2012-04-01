@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  \: MyString
+  begins: 2012-03-29
+  ends: 2012-03-29
+  title: MyString
+  description: MyText
+  status: MyString
+
+two:
+  \: MyString
+  begins: 2012-03-29
+  ends: 2012-03-29
+  title: MyString
+  description: MyText
+  status: MyString

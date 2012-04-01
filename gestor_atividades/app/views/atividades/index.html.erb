@@ -1,0 +1,32 @@
+<h1>Listing atividades</h1>
+
+<table>
+  <tr>
+    <th>\</th>
+    <th>Begins</th>
+    <th>Ends</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @atividades.each do |atividade| %>
+  <tr>
+    <td><%= atividade.begins %></td>
+    <td><%= atividade.ends %></td>
+    <td><%= atividade.title %></td>
+    <td><%= atividade.description %></td>
+    <td><%= atividade.status %></td>
+    <td><%= link_to 'Show', atividade %></td>
+    <td><%= link_to 'Edit', edit_atividade_path(atividade) %></td>
+    <td><%= link_to 'Destroy', atividade, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Atividade', new_atividade_path %>
